@@ -8,16 +8,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <div className="bg-humano-light w-full h-lvh relative md:overflow-hidden md:p-4">
+    <div className="lg:bg-humano-light bg-humano-dark w-full h-lvh relative md:overflow-hidden md:p-4">
       <div className="flex flex-col bg-humano-dark md:rounded-4xl w-full md:h-full p-4 pb-20 md:pb-4">
         <Header />
         <div className="bg-humano-light rounded-2xl p-4 flex flex-auto w-full md:overflow-auto">
           <div className="grid grid-cols-2 grow-10 w-full gap-4 relative">
             <Menu />
-            <div className=" bg-humano-dark text-2xl col-span-2 md:col-span-1 text-humano-light rounded-lg overflow-auto p-4 relative">
+            <main className=" bg-humano-dark text-2xl col-span-2 md:col-span-1 text-humano-light rounded-lg overflow-auto p-4 relative">
               {children}
               <Footer />
-            </div>
+            </main>
           </div>
         </div>
       </div>

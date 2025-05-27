@@ -7,4 +7,18 @@
   --color-humano-light: #eae3b7;
   --color-humano-dark: #161719;
   
+  --animate-moveRightStart: moveRight 9600ms infinite ease-out;
+  --animate-moveRightCenter: moveRight 9900ms infinite ease-out;
+  --animate-moveRightBottom: moveRight 9700ms infinite ease-out;
+  --animate-moveRightEnd: moveRight 10000ms infinite ease-out;
+
+  @keyframes moveRight {
+    0% {
+      left: -180%;
+    }
+  
+    100% {
+      left: 180%;
+    }
+  }
 }

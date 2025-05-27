@@ -1,0 +1,14 @@
+{
+  "Layout": {
+    "title": "Aplicación de Ejemplo",
+    "description": "Esta es una aplicación de ejemplo para demostrar la internacionalización."
+  },
+  "HomePage": {
+    "title": "Home",
+    "description": "Explore our features and services."
+  },
+  "AboutPage": {
+    "title": "About Us",
+    "description": "Learn more about our mission and team."
+  }
+}

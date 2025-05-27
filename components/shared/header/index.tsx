@@ -1,11 +1,13 @@
 import Image from "next/image";
+import Logo from '@/public/images/logo.svg';
+
 import {
   FaTwitter,
   FaFacebook,
   FaPinterest,
   FaInstagram,
 } from "react-icons/fa";
-import Link from "next/link";
+import { Link } from "@/i18n/navigation";
 
 const Header = () => {
   return (
@@ -13,7 +15,7 @@ const Header = () => {
       <div className="">
         <Link href="/">
           <Image
-            src="/images/group-10.svg"
+            src={Logo}
             alt="group-10"
             width={680}
             height={175}
