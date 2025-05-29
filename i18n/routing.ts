@@ -1,27 +1,33 @@
-import {defineRouting} from 'next-intl/routing';
+import { defineRouting } from "next-intl/routing";
 
 export const routing = defineRouting({
   // A list of all locales that are supported
-  locales: ['en', 'sp'],
- 
+  locales: ["en", "es"],
+
   // Used when no locale matches
-  defaultLocale: 'en',
+  defaultLocale: "en",
+  localeCookie: {
+    // Custom cookie name
+    name: "USER_LOCALE",
+    // Expire in one year
+    maxAge: 60 * 60 * 24 * 365,
+  },
   pathnames: {
     "/": {
       en: "/",
-      sp: "/"
+      es: "/",
     },
-    "/about": {
-      en: "/about",
-      sp: "/acerca"
+    "/info": {
+      en: "/info",
+      es: "/info",
     },
     "/works": {
       en: "/works",
-      sp: "/trabajos"
+      es: "/trabajos",
     },
-    "/contact": {
-      en: "/contact",
-    sp: "/contacto"
+    "/connect": {
+      en: "/connect",
+      es: "/connectar",
+    },
   },
-}
 });

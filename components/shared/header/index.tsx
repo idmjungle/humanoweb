@@ -1,5 +1,6 @@
+"use client";
 import Image from "next/image";
-import Logo from '@/public/images/logo.svg';
+import Logo from "@/public/images/logo.svg";
 
 import {
   FaTwitter,
@@ -8,18 +9,22 @@ import {
   FaInstagram,
 } from "react-icons/fa";
 import { Link } from "@/i18n/navigation";
+import { usePathname, useRouter } from "@/i18n/navigation";
+import { useParams } from "next/navigation";
 
 const Header = () => {
+  const router = useRouter();
+  const pathname = usePathname();
+  const params = useParams();
+  const handleLanguageToggle = (checked: boolean) => {
+    router.replace(pathname, { locale: checked ? "es" : "en" });
+  };
+
   return (
     <header className="grid md:grid-cols-3 gap-4 mb-5">
       <div className="">
         <Link href="/">
-          <Image
-            src={Logo}
-            alt="group-10"
-            width={680}
-            height={175}
-          />
+          <Image src={Logo} alt="group-10" width={680} height={175} />
         </Link>
         <div className="lg:mt-4 mt-2">
           <button
@@ -61,28 +66,22 @@ const Header = () => {
       <div className="hidden md:flex place-items-center md:items-end justify-start md:justify-end gap-4 tracking-tighter text-humano-light">
         <span className="text-2xl md:text-4xl font-extrabold mb-2">EN</span>{" "}
         <div className="relative">
-          <label htmlFor="lang" className="block rounded-full bg-humano-light w-18 h-9 md:w-24 md:h-12 cursor-pointer outline-2 relative">
-            <input type="checkbox" id="lang" className="peer appearance-none" />
-            {/* <div className="absolute rounded-full w-8 h-8 md:w-10 md:h-10 bg-humano-dark top-0 m-0.5 md:m-1 has-checked:left-full has-not-checked:left-0"></div> */}
-            <div className="absolute transition-all rounded-full w-8 h-8 md:w-12 md:h-12 bg-humano-dark top-0 peer-checked:translate-x-[100%] outline-1 -outline-offset-1"></div>
+          <label
+            htmlFor="lang"
+            className="block rounded-full bg-humano-light w-18 h-9 md:w-24 md:h-12 cursor-pointer outline-2 relative"
+          >
+            <input
+              type="checkbox"
+              id="lang"
+              defaultChecked={params.locale === "es"}
+              className="peer appearance-none"
+              onChange={(e) => handleLanguageToggle(e.target.checked)}
+            />
+            <div className="absolute transition-all rounded-full w-8 h-8 md:w-12 md:h-12 bg-humano-dark top-0 left-0 peer-checked:translate-x-[100%] outline-1 -outline-offset-1"></div>
           </label>
         </div>
-      {/* <Image
-        className="inline"
-        src="/images/group0.svg"
-        alt="group0"
-        width={116}
-        height={44}
-      /> */}
         <span className="text-2xl md:text-4xl font-extrabold mb-2">ES</span>{" "}
       </div>
-      {/* <div>
-              <div className="grid place-content-end space-y-3">
-                <div className="bg-humano-red rounded-full w-32 h-6"></div>
-                <div className="bg-humano-orange rounded-full w-32 h-6"></div>
-                <div className="bg-humano-yellow rounded-full w-32 h-6"></div>
-              </div>
-            </div> */}
     </header>
   );
 };

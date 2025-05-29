@@ -3,12 +3,24 @@
     "title": "Aplicación de Ejemplo",
     "description": "Esta es una aplicación de ejemplo para demostrar la internacionalización."
   },
+    "Menu": {
+    "info": "Info",
+    "works": "Works",
+    "connect": "Connect"
+  },
   "HomePage": {
     "title": "Home",
-    "description": "Explore our features and services."
+    "description": "Explore our features and services.",
+    "sampleText": ["Lorem ipsum dolor sit amet. Qui voluptatem temporibus nam harum autem sit aliquam autem qui expedita amet eos ipsam amet. Eum odio galisum At facilis numquam in iusto aperiam qui galisum maxime ex tempora autem eum mollitia ratione. Sit minus quos aut rerum labore est sequi quos eos cumque maxime vel rerum consequatur a pariatur neque. Ex accusamus sapiente ut vitae animi ex voluptatem quod ad facilis odit ea incidunt consequatur aut perferendis molestias. ",
+    "Ad modi molestiae et sequi sunt sed quas quia ab molestiae expedita et atque obcaecati aut quod obcaecati qui doloribus neque. Eos animi numquam quo nihil distinctio est fugit perferendis vel numquam voluptatum qui omnis voluptatem. Eos provident nisi qui omnis mollitia et nisi quod non fugiat quia aut assumenda iste ut sequi reprehenderit. Nam quam eaque ut enim sint aut distinctio possimus aut voluptas voluptatem eos internos repellat ut libero sunt quo aliquid sint. Ut perferendis velit non voluptatibus molestiae ut quam tempore ut placeat eaque in consectetur illum. Qui ratione delectus nam quisquam esse aut aperiam itaque."
+    ]
   },
   "AboutPage": {
-    "title": "About Us",
+    "title": "Info",
     "description": "Learn more about our mission and team."
+  },
+  "WorkPage": {
+    "title": "Works",
+    "description": "Learn more about our work and projects."
   }
 }

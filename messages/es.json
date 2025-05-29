@@ -1,0 +1,27 @@
+{
+  "Layout": {
+    "title": "Aplicación de Ejemplo",
+    "description": "Esta es una aplicación de ejemplo para demostrar la internacionalización."
+  },
+  "Menu": {
+    "info": "Info",
+    "works": "Trabajos",
+    "connect": "Conectar"
+  },
+  "HomePage": {
+    "title": "Hogar",
+    "description": "Explora nuestras características y servicios.",
+    "sampleText": [
+      "Este es un texto de muestra para demostrar el diseño y la disposición de la aplicación.",
+      "Este es otro texto de muestra para mostrar las capacidades multilingües de la aplicación."
+    ]
+  },
+  "AboutPage": {
+    "title": "Info",
+    "description": "Conoce más sobre nuestra misión y equipo."
+  },
+  "WorkPage": {
+    "title": "Trabajos",
+    "description": "Conoce más sobre nuestro trabajo y proyectos."
+  }
+}
