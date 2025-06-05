@@ -8,6 +8,12 @@
     "works": "Trabajos",
     "connect": "Conectar"
   },
+  "Carousel": {
+    "custom": "Web Personalizados",
+    "maintanance": "Mantenimiento",
+    "redesign": "Rediseño del Sitio Web",
+    "lang": "En Inglés y Español"
+  },
   "HomePage": {
     "title": "Hogar",
     "description": "Explora nuestras características y servicios.",
@@ -18,10 +24,36 @@
   },
   "AboutPage": {
     "title": "Info",
-    "description": "Conoce más sobre nuestra misión y equipo."
+    "description": "Conoce más sobre nuestra misión y equipo.",
+    "who": {
+      "title": "¿Quiénes Somos?",
+      "description": [
+        "¡Hola! Soy Eligio Rosa, diseñador web y desarrollador full-stack con sede en Washington Occidental y más de 10 años de experiencia en la creación de sitios web y herramientas digitales que realmente funcionan. He trabajado con clientes en Puerto Rico y en el continente de EE. UU., desde pequeñas escuelas hasta grandes empresas, y ahora me estoy enfocando en ayudar a las empresas locales en el PNW a destacarse en línea.",
+        "Me encargo de todo: desde diseños limpios y adaptados a dispositivos móviles, hasta desarrollo backend con PHP, Node.js y React. He creado cientos de sitios web, implementado aplicaciones en AWS, gestionado bases de datos y construido herramientas que resuelven problemas reales. ¿Necesitas un sitio web en inglés y español? No hay problema: construyo páginas completamente bilingües que conectan con todos tus clientes.",
+        "Ya seas una pequeña empresa que necesita un sitio web o un creativo que busca un portafolio, aporto habilidades técnicas y una visión creativa a la mesa. ¿No te gusta hablar de tecnología? No te preocupes: lo mantengo humano, claro y honesto. Hagamos que tu idea sea real y que se vea bien mientras lo hacemos."
+      ]
+    },
+    "what": {
+      "title": "¿Qué Hacemos?",
+      "description": "Nos gusta hacer que el internet funcione para ti. Si estás empezando o quieres mejorar lo que ya tienes, aquí estamos para ayudarte con servicios útiles, claros y hechos a tu medida:",
+      "services": [
+        "Sitios web personalizados que se ven geniales en teléfonos y computadoras de escritorio",
+        "Páginas bilingües (inglés + español)",
+        "Tiendas en línea y sistemas de reservas",
+        "Branding, logotipos y elementos visuales que reflejan tu identidad",
+        "Ayuda con actualizaciones, alojamiento y mantenimiento",
+        "CMS personalizado fácil de gestionar para que tengas el control"
+      ],
+      "footer":
+        "No nos complicamos con cosas innecesarias, solo soluciones sólidas y inteligentes para ayudarte a destacar en línea."  
+    }
   },
   "WorkPage": {
     "title": "Trabajos",
     "description": "Conoce más sobre nuestro trabajo y proyectos."
+  },
+  "ContactPage": {
+    "title": "Conectar",
+    "description": "Ponte en contacto con nosotros a través de varios canales."
   }
 }

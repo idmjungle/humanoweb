@@ -3,24 +3,57 @@
     "title": "Aplicación de Ejemplo",
     "description": "Esta es una aplicación de ejemplo para demostrar la internacionalización."
   },
-    "Menu": {
+  "Menu": {
     "info": "Info",
     "works": "Works",
     "connect": "Connect"
   },
+  "Carousel": {
+    "custom": "Custom Website",
+    "maintanance": "Site Maintenance",
+    "redesign": "Website Redesign",
+    "lang": "In English and Spanish"
+  },
   "HomePage": {
     "title": "Home",
     "description": "Explore our features and services.",
-    "sampleText": ["Lorem ipsum dolor sit amet. Qui voluptatem temporibus nam harum autem sit aliquam autem qui expedita amet eos ipsam amet. Eum odio galisum At facilis numquam in iusto aperiam qui galisum maxime ex tempora autem eum mollitia ratione. Sit minus quos aut rerum labore est sequi quos eos cumque maxime vel rerum consequatur a pariatur neque. Ex accusamus sapiente ut vitae animi ex voluptatem quod ad facilis odit ea incidunt consequatur aut perferendis molestias. ",
-    "Ad modi molestiae et sequi sunt sed quas quia ab molestiae expedita et atque obcaecati aut quod obcaecati qui doloribus neque. Eos animi numquam quo nihil distinctio est fugit perferendis vel numquam voluptatum qui omnis voluptatem. Eos provident nisi qui omnis mollitia et nisi quod non fugiat quia aut assumenda iste ut sequi reprehenderit. Nam quam eaque ut enim sint aut distinctio possimus aut voluptas voluptatem eos internos repellat ut libero sunt quo aliquid sint. Ut perferendis velit non voluptatibus molestiae ut quam tempore ut placeat eaque in consectetur illum. Qui ratione delectus nam quisquam esse aut aperiam itaque."
+    "sampleText": [
+      "Lorem ipsum dolor sit amet. Qui voluptatem temporibus nam harum autem sit aliquam autem qui expedita amet eos ipsam amet. Eum odio galisum At facilis numquam in iusto aperiam qui galisum maxime ex tempora autem eum mollitia ratione. Sit minus quos aut rerum labore est sequi quos eos cumque maxime vel rerum consequatur a pariatur neque. Ex accusamus sapiente ut vitae animi ex voluptatem quod ad facilis odit ea incidunt consequatur aut perferendis molestias. ",
+      "Ad modi molestiae et sequi sunt sed quas quia ab molestiae expedita et atque obcaecati aut quod obcaecati qui doloribus neque. Eos animi numquam quo nihil distinctio est fugit perferendis vel numquam voluptatum qui omnis voluptatem. Eos provident nisi qui omnis mollitia et nisi quod non fugiat quia aut assumenda iste ut sequi reprehenderit. Nam quam eaque ut enim sint aut distinctio possimus aut voluptas voluptatem eos internos repellat ut libero sunt quo aliquid sint. Ut perferendis velit non voluptatibus molestiae ut quam tempore ut placeat eaque in consectetur illum. Qui ratione delectus nam quisquam esse aut aperiam itaque."
     ]
   },
   "AboutPage": {
     "title": "Info",
-    "description": "Learn more about our mission and team."
+    "description": "Learn more about our mission and team.",
+    "who": {
+      "title": "Who Are We?",
+      "description": [
+        "Hey! I’m Eligio Rosa, a web designer and full-stack developer based in Western Washington with over 10 years of experience building websites and digital tools that just work. I’ve worked with clients across Puerto Rico and the mainland U.S., from small schools to big companies, and now I’m focused on helping local businesses in the PNW stand out online.",
+        "I handle everything from clean, mobile-friendly designs to backend development with PHP, Node.js, and React. I’ve created hundreds of websites, deployed apps on AWS, managed databases, and built tools that solve real problems. Need a website in English and Spanish? No problem—I build fully bilingual pages that connect with all your customers.",
+        "Whether you're a small business needing a website or a creative needing a portfolio, I bring tech skills and a creative eye to the table. Not into tech talk? No worries. I keep it human, clear, and honest. Let’s make your idea real—and make it look good while we’re at it."
+      ]
+    },
+    "what": {
+      "title": "What Do We Do?",
+      "description": "We’re here to make the web work for you. Whether you're building something new or need a fresh start, we’ve got your back with services that are practical, clean, and built to fit your goals:",
+      "services": [
+        "Custom websites that look great on phones and desktops",
+        "Bilingual pages (English + Spanish)",
+        "Online stores and booking systems",
+        "Branding, logos, and visuals that feel like you",
+        "Help with updates, hosting, and maintenance",
+        "Easy-to-manage custom CMS so you’re in control"
+      ],
+      "footer":
+        "We don’t overcomplicate things—just solid, smart solutions to help you show up online."
+    }
   },
   "WorkPage": {
     "title": "Works",
     "description": "Learn more about our work and projects."
+  },
+  "ContactPage": {
+    "title": "Connect",
+    "description": "Get in touch with us through various channels."
   }
 }

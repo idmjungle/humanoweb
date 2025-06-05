@@ -1,19 +1,27 @@
-const ContactImage = () => {
+const ContactImage = ({
+  design = "",
+  size = 64,
+}: {
+  design?: string;
+  size?: number;
+}) => {
+  const parsedSize = typeof size === "number" ? size : 64;
+
   return (
     <svg
-      width="64px"
-      height="64px"
+      width={`${parsedSize}px`}
+      height={`${parsedSize}px`}
       viewBox="0 0 150 150"
       version="1.1"
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
       xmlSpace="preserve"
+      className={design}
       style={{
         fillRule: "evenodd",
         clipRule: "evenodd",
         strokeLinejoin: "round",
         strokeMiterlimit: 2,
-        fill: "currentColor",
       }}
     >
       <g transform="matrix(1,0,0,1,-250,-700)">

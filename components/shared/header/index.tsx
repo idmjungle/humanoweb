@@ -80,7 +80,7 @@ const Header = () => {
             <div className="absolute transition-all rounded-full w-8 h-8 md:w-12 md:h-12 bg-humano-dark top-0 left-0 peer-checked:translate-x-[100%] outline-1 -outline-offset-1"></div>
           </label>
         </div>
-        <span className="text-2xl md:text-4xl font-extrabold mb-2">ES</span>{" "}
+        <span className="text-2xl md:text-4xl font-extrabold mb-2">&Eacute;S</span>{" "}
       </div>
     </header>
   );

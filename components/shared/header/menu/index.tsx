@@ -35,7 +35,7 @@ const Menu = () => {
         >
           <div className="bg-humano-orange text-humano-light transition-all ease-in-out duration-300 font-extrabold tracking-tighter rounded-lg p-2 md:p-4 uppercase z-0 relative top-0 left-0 group-hover:left-3 group-hover:-top-3">
             <div className="float-left mr-4">
-              <WorksImage />
+              <WorksImage design="fill-humano-light" size={64} />
             </div>
             {t("works")}
           </div>
@@ -54,7 +54,7 @@ const Menu = () => {
         >
           <div className="bg-humano-yellow text-humano-dark transition-all ease-in-out duration-300 font-extrabold tracking-tighter rounded-lg p-2 md:p-4 uppercase z-0 relative top-0 left-0 group-hover:left-3 group-hover:-top-3 w-full">
             <div className="float-left mr-4">
-              <ContactImage />
+              <ContactImage design="fill-humano-dark" size={64} />
             </div>
             {t("connect")}
           </div>

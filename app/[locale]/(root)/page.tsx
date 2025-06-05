@@ -1,21 +1,10 @@
-import { useTranslations, useMessages } from "next-intl";
-
-export const metadata = {
-  title: "Home",
-};
+import Carousel from "@/components/shared/carousel/page";
 
 const Homepage = () => {
-  const t = useTranslations("HomePage");
-  metadata.title = t("title");
-  const messages = useMessages();
-  const keys = Object.keys(messages.HomePage.sampleText);
 
   return (
-    <div className="flex flex-col text-2xl/6 gap-6">
-      <p>{t("description")}</p>
-      {keys.map((key) => (
-        <div className="animate-flicker-in-1" style={{ animationDelay: `${Number(key) * 100}ms` }} key={key}><p className="leading-8">{t(`sampleText.${key}`)}</p></div>
-      ))}
+    <div className="bg-humano-dark relative w-full h-full top-0 overflow-hidden rounded-sm">
+      <Carousel />
     </div>
   );
 };

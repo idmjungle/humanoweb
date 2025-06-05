@@ -9,8 +9,8 @@ const WorksPage = () => {
 
   return (
     <RootLayout>
-      <div className="flex text-9xl p-4 font-extrabold uppercase bg-humano-orange rounded-full tracking-tighter animate-shadow-pop-bl">
-        <WorksImage design="fill-humano-light me-4" size={128} />
+      <div className="flex text-8xl p-4 font-extrabold uppercase bg-humano-orange rounded-full tracking-tighter animate-shadow-pop-bl">
+        <WorksImage design="fill-humano-light me-4" size={96} />
         {t("title")}
       </div>
     </RootLayout>
