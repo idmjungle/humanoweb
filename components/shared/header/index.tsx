@@ -8,8 +8,7 @@ import {
   FaPinterest,
   FaInstagram,
 } from "react-icons/fa";
-import { Link } from "@/i18n/navigation";
-import { usePathname, useRouter } from "@/i18n/navigation";
+import { Link, usePathname, useRouter } from "@/i18n/navigation";
 import { useParams } from "next/navigation";
 
 const Header = () => {
@@ -53,7 +52,6 @@ const Header = () => {
           </button>
         </div>
 
-        {/* <div className="h-[60px] mt-2 bg-[url(/images/humano_lines.png)] "></div> */}
       </div>
       <div className="flex items-center">
         {" "}

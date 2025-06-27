@@ -1,11 +1,25 @@
 @import "tailwindcss";
 
+.page-transition {
+  z-index: 50;
+}
+
 @theme {
   --color-humano-red: #d62827;
   --color-humano-orange: #f78000;
   --color-humano-yellow: #fbbe49;
   --color-humano-light: #eae3b7;
   --color-humano-dark: #161719;
+
+  --text-shadow-red: -1px 1px 0px #161719, 1px -1px 0px #161719,
+    1px 1px 0px #161719, -1px -1px 0px #161719, -5px 5px 0px #d62827,
+    -10px 10px 0px #d62827, -15px 15px 0px #d62827;
+  --text-shadow-orange: -1px 1px 0px #161719, 1px -1px 0px #161719,
+    1px 1px 0px #161719, -1px -1px 0px #161719, -5px 5px 0px #f78000,
+    -10px 10px 0px #f78000, -15px 15px 0px #f78000;
+  --text-shadow-yellow: -1px 1px 0px #161719, 1px -1px 0px #161719,
+    1px 1px 0px #161719, -1px -1px 0px #161719, -5px 5px 0px #fbbe49,
+    -10px 10px 0px #fbbe49, -15px 15px 0px #fbbe49;
 
   --animate-moveRightStart: moveRight 9600ms infinite ease-out;
   --animate-moveRightCenter: moveRight 9900ms infinite ease-out;
@@ -22,6 +36,27 @@
   --animate-flicker-in-glow: text-flicker-in-glow 4s linear both;
 
   --animate-flicker-out-glow: text-flicker-out-glow 2.5s linear both;
+
+  --animate-scale-in-ver-top: scale-in-ver-top 0.5s
+    cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+
+  --animate-scale-in-hor-right: scale-in-hor-right 0.5s
+    cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+
+  --animate-scale-in-hor-left: scale-in-hor-left 0.5s
+    cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+
+  --animate-slide-in-left: slide-in-left 0.5s
+    cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+
+  --animate-slide-in-right: slide-in-right 0.5s
+    cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+
+  --animate-slide-out-left: slide-out-left 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+
+  --animate-slide-out-right: slide-out-right 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+
+  --animate-bg-slide:slide 20s linear infinite;
 
   @keyframes moveRight {
     0% {
@@ -474,4 +509,111 @@
       opacity: 0;
     }
   }
+
+  @keyframes scale-in-ver-top {
+    0% {
+      -webkit-transform: scaleY(0);
+      transform: scaleY(0);
+      -webkit-transform-origin: 100% 0%;
+      transform-origin: 100% 0%;
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: scaleY(1);
+      transform: scaleY(1);
+      -webkit-transform-origin: 100% 0%;
+      transform-origin: 100% 0%;
+      opacity: 1;
+    }
+  }
+
+  @keyframes scale-in-hor-right {
+    0% {
+      -webkit-transform: scaleX(0);
+      transform: scaleX(0);
+      -webkit-transform-origin: 100% 100%;
+      transform-origin: 100% 100%;
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: scaleX(1);
+      transform: scaleX(1);
+      -webkit-transform-origin: 100% 100%;
+      transform-origin: 100% 100%;
+      opacity: 1;
+    }
+  }
+
+  @keyframes scale-in-hor-left {
+    0% {
+      -webkit-transform: scaleX(0);
+      transform: scaleX(0);
+      -webkit-transform-origin: 0% 0%;
+      transform-origin: 0% 0%;
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: scaleX(1);
+      transform: scaleX(1);
+      -webkit-transform-origin: 0% 0%;
+      transform-origin: 0% 0%;
+      opacity: 1;
+    }
+  }
+
+  @keyframes slide-in-left {
+    0% {
+      -webkit-transform: translateX(-1000px);
+      transform: translateX(-1000px);
+    }
+    100% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes slide-in-right {
+    0% {
+      -webkit-transform: translateX(1000px);
+      transform: translateX(1000px);
+    }
+    100% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+    }
+  }
+
+
+@keyframes slide-out-left {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-1000px);
+            transform: translateX(-1000px);
+  }
+}
+
+@keyframes slide-out-right {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(1000px);
+            transform: translateX(1000px);
+  }
+  }
+
+  @keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+
 }

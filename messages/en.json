@@ -26,7 +26,7 @@
     "title": "Info",
     "description": "Learn more about our mission and team.",
     "who": {
-      "title": "Who Are We?",
+      "title": "Who Am I?",
       "description": [
         "Hey! I’m Eligio Rosa, a web designer and full-stack developer based in Western Washington with over 10 years of experience building websites and digital tools that just work. I’ve worked with clients across Puerto Rico and the mainland U.S., from small schools to big companies, and now I’m focused on helping local businesses in the PNW stand out online.",
         "I handle everything from clean, mobile-friendly designs to backend development with PHP, Node.js, and React. I’ve created hundreds of websites, deployed apps on AWS, managed databases, and built tools that solve real problems. Need a website in English and Spanish? No problem—I build fully bilingual pages that connect with all your customers.",
@@ -34,7 +34,7 @@
       ]
     },
     "what": {
-      "title": "What Do We Do?",
+      "title": "What I Do?",
       "description": "We’re here to make the web work for you. Whether you're building something new or need a fresh start, we’ve got your back with services that are practical, clean, and built to fit your goals:",
       "services": [
         "Custom websites that look great on phones and desktops",
@@ -44,16 +44,38 @@
         "Help with updates, hosting, and maintenance",
         "Easy-to-manage custom CMS so you’re in control"
       ],
-      "footer":
-        "We don’t overcomplicate things—just solid, smart solutions to help you show up online."
+      "footer": "We don’t overcomplicate things—just solid, smart solutions to help you show up online."
     }
   },
-  "WorkPage": {
+  "WorksPage": {
     "title": "Works",
-    "description": "Learn more about our work and projects."
+    "description": "Click the image to see more about the project.",
+    "WorksGallery": {
+      "works": [
+        {
+          "title": "Bite Art",
+          "photo": "/images/bite_art_web.jpg",
+          "year": "2014",
+          "desc": "a Spanish-language online magazine focused on gastronomy, chefs, food culture, and culinary events. This minmalist website was for the \"foodies\" of Puerto Rico, featuring articles, interviews, and event coverage. It was designed to be clean and easy to navigate, with a focus on high-quality images and engaging content. Also has a custom CMS that includes a recipe maker."
+        }
+      ]
+    },
+    "soon": "More projects coming soon!"
   },
   "ContactPage": {
     "title": "Connect",
-    "description": "Get in touch with us through various channels."
+    "description": "Please fill out the form below to get in touch with us. We usually respond within 24 hours.",
+    "name": "Name of Person or Business",
+    "namePlace": "Enter Name or Business",
+    "email": "Your Email ",
+    "emailPlace": "Enter Your Email ",
+    "tel": "Your Phone #",
+    "telPlace": "Enter Your Phone #",
+    "message": "Any extra details?",
+    "messagePlace": "Enter any extra details.",
+    "submit": "Send Message",
+    "sending": "Sending...",
+    "success": "Thank you!",
+    "error": "There was an error sending your message. Please try again later."
   }
 }

@@ -44,16 +44,38 @@
         "Ayuda con actualizaciones, alojamiento y mantenimiento",
         "CMS personalizado fácil de gestionar para que tengas el control"
       ],
-      "footer":
-        "No nos complicamos con cosas innecesarias, solo soluciones sólidas y inteligentes para ayudarte a destacar en línea."  
+      "footer": "No nos complicamos con cosas innecesarias, solo soluciones sólidas y inteligentes para ayudarte a destacar en línea."
     }
   },
-  "WorkPage": {
+  "WorksPage": {
     "title": "Trabajos",
-    "description": "Conoce más sobre nuestro trabajo y proyectos."
+    "description": "Haga clic en la imagen para ver más sobre el proyecto.",
+    "WorksGallery": {
+      "works": [
+        {
+          "title": "Bite Art",
+          "photo": "/images/bite_art_web.jpg",
+          "year": "2014",
+          "desc": "Bite Art una revista en línea en español centrada en la gastronomía, chefs, cultura alimentaria y eventos culinarios. Este sitio web minimalista fue diseñado para los amantes de la comida de Puerto Rico, presentando artículos, entrevistas y cobertura de eventos. Se diseñó para ser limpio y fácil de navegar, con un enfoque en imágenes de alta calidad y contenido atractivo. También cuenta con un CMS personalizado que incluye un creador de recetas."
+        }
+      ]
+    },
+    "soon": "¡Más proyectos próximamente!"
   },
   "ContactPage": {
     "title": "Conectar",
-    "description": "Ponte en contacto con nosotros a través de varios canales."
+    "description": "Por favor, completa el formulario a continuación para ponerte en contacto con nosotros. Por lo general, respondemos dentro de 24 horas.",
+    "name": "Tu nombre o tu negocio",
+    "namePlace": "Ingresa tu nombre o el nombre de tu negocio",
+    "email": "Tu correo electrónico",
+    "emailPlace": "Ingresa tu correo electrónico",
+    "tel": "Tu # de telefono",
+    "telPlace": "Ingresa tu # de telefono",
+    "message": "¿Algunos detalles extra?",
+    "messagePlace": "Ingresa algunos detalles extra.",
+    "submit": "Enviar Mensaje",
+    "sending": "Enviando...",
+    "success": "¡Gracias!",
+    "error": "Hubo un error al enviar tu mensaje. Por favor, inténtalo de nuevo más tarde."
   }
 }
