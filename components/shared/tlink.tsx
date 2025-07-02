@@ -46,9 +46,9 @@ const TLink = ({ children, href, ...props }: TLinkProps) => {
       }
     });
 
-    await sleep(500);
+    await sleep(1500);
     router.push(href as Parameters<typeof router.push>[0]);
-    await sleep(500);
+    await sleep(1500);
 
     lines?.forEach((line) => {
       if (line.classList.contains("-left-full")) {

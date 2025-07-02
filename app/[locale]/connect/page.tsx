@@ -75,10 +75,10 @@ const ContactPage = () => {
         "contact",
         "shadow"
       )}
-      <h2 className="my-4 font-bold text-3xl">{t("description")}</h2>
+      <h2 className="my-4 font-bold text-base md:text-3xl tracking-tighter leading-5">{t("description")}</h2>
       <form
         onSubmit={handleSubmit}
-        className={`p-8 grid grid-cols-3 bg-humano-light ${(sending || success)?"rounded-full":"rounded-4xl"} gap-4 transition-[border-radius] duration-1500`}
+        className={`p-3 lg:p-8 grid lg:grid-cols-3 text-base lg:text-xl bg-humano-light ${(sending || success)?"rounded-full":"rounded-4xl"} gap-4 transition-all duration-1500`}
       >
         {sending && (
           <div className="text-9xl font-bold animate-pulse text-humano-dark tracking-tighter leading-[0.8]">{t("sending")}</div>
@@ -86,9 +86,9 @@ const ContactPage = () => {
         {success && (
           <div className="text-9xl font-bold text-humano-dark tracking-tighter leading-[0.8] w-full">{t("success")}</div>
         )}
-        <div className={`space-y-5 ${(sending || success) && "hidden"}`}>
+        <div className={`space-y-3 md:space-y-5 ${(sending || success) && "hidden"}`}>
           <div>
-            <label className="text-xl text-humano-dark font-bold mb-2 block">
+            <label className="mt-4 text-humano-dark font-bold mb-2 block">
               {t("name")} *
             </label>
             <input
@@ -96,7 +96,7 @@ const ContactPage = () => {
               placeholder={t("namePlace")}
               id="name"
               name="name"
-              className={`w-full rounded-full py-2.5 px-4 ${(error && message.find((m) => m.path[0] === "name") ? "text-humano-light bg-humano-red" : "text-humano-light bg-humano-dark")}  border border-humano-dark focus:border-humano-dark focus:bg-humano-yellow focus:text-humano-dark text-xl outline-0 transition-all`}
+              className={`w-full rounded-full py-2.5 px-4 ${(error && message.find((m) => m.path[0] === "name") ? "text-humano-light bg-humano-red" : "text-humano-light bg-humano-dark")} border border-humano-dark focus:border-humano-dark focus:bg-humano-yellow focus:text-humano-dark outline-0 transition-all`}
             />
             {error && message.find((m) => m.path[0] === "name") && (
               <div className="text-humano-red text-lg">
@@ -105,7 +105,7 @@ const ContactPage = () => {
             )}
           </div>
           <div>
-            <label className="text-xl text-humano-dark font-bold mb-2 block">
+            <label className="text-humano-dark font-bold mb-2 block">
               {t("email")} *
             </label>
             <input
@@ -113,7 +113,7 @@ const ContactPage = () => {
               placeholder={t("emailPlace")}
               id="email"
               name="email"
-              className={`w-full py-2.5 rounded-full px-4 ${(error && message.find((m) => m.path[0] === "email") ? "text-humano-light bg-humano-red" : "text-humano-light bg-humano-dark")} border border-gray-200 focus:border-humano-dark focus:bg-humano-yellow focus:text-humano-dark text-xl outline-0 transition-all`}
+              className={`w-full py-2.5 rounded-full px-4 ${(error && message.find((m) => m.path[0] === "email") ? "text-humano-light bg-humano-red" : "text-humano-light bg-humano-dark")} border border-gray-200 focus:border-humano-dark focus:bg-humano-yellow focus:text-humano-dark outline-0 transition-all`}
             />
             {error && message.find((m) => m.path[0] === "email") && (
               <div className="text-humano-red text-lg">
@@ -122,7 +122,7 @@ const ContactPage = () => {
             )}
           </div>
           <div>
-            <label className="text-xl text-humano-dark font-bold mb-2 block">
+            <label className="text-humano-dark font-bold mb-2 block">
               {t("tel")}
             </label>
             <PatternFormat   
@@ -132,13 +132,13 @@ const ContactPage = () => {
               placeholder={t("telPlace")}
               id="tel"
               name="tel"
-              className="w-full py-2.5 rounded-full px-4 text-humano-light bg-humano-dark border border-gray-200 focus:border-humano-dark focus:bg-humano-yellow focus:text-humano-dark text-xl outline-0 transition-all"
+              className="w-full py-2.5 rounded-full px-4 text-humano-light bg-humano-dark border border-gray-200 focus:border-humano-dark focus:bg-humano-yellow focus:text-humano-dark outline-0 transition-all"
             />
           </div>
         </div>
         <div className={`space-y-5 ${(sending || success) && "hidden"}`}>
           <div>
-            <label className="text-xl text-humano-dark font-bold mb-2 block">
+            <label className="text-humano-dark font-bold mb-2 block">
               {t("message")}
             </label>
             <textarea
@@ -146,17 +146,14 @@ const ContactPage = () => {
               rows={9}
               id="message"
               name="message"
-              className="w-full rounded-4xl px-4 text-humano-light bg-humano-dark border border-gray-200 focus:border-humano-dark focus:bg-humano-yellow focus:text-humano-dark text-xl pt-3 outline-0 transition-all"
+              className="w-full rounded-4xl px-4 text-humano-light bg-humano-dark border border-gray-200 focus:border-humano-dark focus:bg-humano-yellow focus:text-humano-dark pt-3 outline-0 transition-all"
             ></textarea>
           </div>
         </div>
         <div className={`space-y-5 ${(sending || success) && "hidden"}`}>
-          <label className="text-xl text-humano-dark font-bold mb-2 block">
-            &nbsp;
-          </label>
           <button
             type="submit"
-            className="text-humano-light bg-humano-dark rounded-4xl font-bold hover:bg-humano-orange hover:text-humano-dark text-7xl  text-left tracking-tighter leading-[0.8] px-4 py-2.5 w-full border-0 outline-0 cursor-pointer h-66"
+            className="text-humano-light bg-humano-dark rounded-4xl font-bold hover:bg-humano-orange hover:text-humano-dark text-5xl md:text-7xl text-left tracking-tighter leading-[0.8] px-4 py-2.5 md:w-full border-0 outline-0 cursor-pointer h-32 md:h-66"
           >
             {t("submit")}
           </button>

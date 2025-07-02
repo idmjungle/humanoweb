@@ -35,8 +35,8 @@ const AboutPage = () => {
       {PageTop({ imageType: "about", textType: "about" }, "about", "about", "shadow")}
       <h2 className="text-4xl md:text-6xl font-bold my-8 text-shadow-red">{t("who.title")}</h2>
       <div className="text-xl md:text-2xl">
-        <div className="float-left me-4 mb-4">
-        <Image className="rounded-full" src="/images/me.jpg" alt="That's me!" width={300} height={300} />
+        <div className="md:float-left me-4 mb-4">
+        <Image className="rounded-full size-fit" src="/images/me.jpg" alt="That's me!" width={300} height={300} />
         </div>
         {whoDescription}
       </div>

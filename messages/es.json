@@ -77,5 +77,6 @@
     "sending": "Enviando...",
     "success": "¡Gracias!",
     "error": "Hubo un error al enviar tu mensaje. Por favor, inténtalo de nuevo más tarde."
-  }
+  },
+  "title": ""
 }

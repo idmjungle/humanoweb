@@ -20,7 +20,7 @@ const Header = () => {
   };
 
   return (
-    <header className="grid md:grid-cols-3 gap-4 mb-5">
+    <header className="grid md:grid-cols-3 md:gap-4 mb-5">
       <div className="">
         <Link href="/">
           <Image src={Logo} alt="group-10" width={680} height={175} />
@@ -55,18 +55,18 @@ const Header = () => {
       </div>
       <div className="flex items-center">
         {" "}
-        <h1 className="text-4xl lg:text-7xl text-humano-light font-extrabold tracking-tighter md:text-center">
+        <h1 className="text-xl md:text-5xl xl:text-7xl text-humano-light font-extrabold tracking-tighter md:text-center">
           <span className="text-humano-red">Your Vision</span>, en{" "}
           <span className="text-humano-orange">Español</span> y{" "}
           <span className="text-humano-yellow">English</span>
         </h1>
       </div>
-      <div className="hidden md:flex place-items-center md:items-end justify-start md:justify-end gap-4 tracking-tighter text-humano-light">
+      <div className="flex place-items-center items-center md:items-end justify-start md:justify-end gap-4 tracking-tighter text-humano-light">
         <span className="text-2xl md:text-4xl font-extrabold mb-2">EN</span>{" "}
         <div className="relative">
           <label
             htmlFor="lang"
-            className="block rounded-full bg-humano-light w-18 h-9 md:w-24 md:h-12 cursor-pointer outline-2 relative"
+            className="block rounded-full bg-humano-light w-16 h-8 md:w-24 md:h-12 cursor-pointer outline-2 relative"
           >
             <input
               type="checkbox"

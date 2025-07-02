@@ -48,20 +48,20 @@ const PageTop = (props: PageTopProps, color: string, text: string, shadow: strin
       <div
         className={` bg-humano-${color} text-humano-${
           color === "yellow" ? "dark" : "light" 
-        } outline-2 outline-humano-dark rounded-full animate-shadow-pop-bl p-2 md:p-1 size-16 md:size-40 inline-flex items-center justify-center`}
+        } outline-2 outline-humano-dark rounded-full animate-shadow-pop-bl p-2 xl:p-1 size-16 md:size-28 xl:size-40 inline-flex items-center justify-center`}
       >
         <ImageComponent
           design={`fill-humano-${
             color === "yellow" ? "dark" : "light"
-          } inline-block md:hidden`}
+          } inline-block lg:hidden`}
           size={48}
         />
         <ImageComponent
-          design={`fill-humano-${color === "yellow" ? "dark" : "light"} hidden md:inline-block`}
+          design={`fill-humano-${color === "yellow" ? "dark" : "light"} hidden lg:inline-block`}
           size={128}
         />
       </div>
-      <span className={`text-4xl md:text-9xl font-extrabold uppercase inline-flex text-humano-light align-middle tracking-tighter items-center justify-center ms-4 h-32 top-0 absolute ${shadow}`}>
+      <span className={`text-5xl md:text-8xl xl:text-9xl font-extrabold uppercase lg:inline-flex text-humano-light align-middle tracking-tighter items-center justify-center ms-4 lg:h-32 top-0 absolute ${shadow}`}>
         {t("title")}
       </span>
     </div>

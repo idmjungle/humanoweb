@@ -12,7 +12,7 @@ const Menu = () => {
       <div className="flex md:grid md:grid-cols-2 gap-2 md:gap-4 md:text-3xl lg:text-6xl text-xl md:justify-start text-humano-light">
         <TLink href="/info">
           <div className="bg-humano-red text-humano-light transition-all ease-in-out duration-300 font-extrabold tracking-tighter rounded-lg p-2 md:p-4 uppercase z-0 relative top-0 left-0 group-hover:left-3 group-hover:-top-3">
-            <div className="float-left mr-4">
+            <div className="lg:float-left mr-6 md:mr-14 lg:mr-4">
               <div className="hidden md:inline-block">
                 <AboutImage design="fill-humano-light" size={64} />
               </div>
@@ -33,7 +33,7 @@ const Menu = () => {
         </TLink>
         <TLink href="/works">
           <div className="bg-humano-orange text-humano-light transition-all ease-in-out duration-300 font-extrabold tracking-tighter rounded-lg p-2 md:p-4 uppercase z-0 relative top-0 left-0 group-hover:left-3 group-hover:-top-3">
-            <div className="float-left mr-4">
+            <div className="lg:float-left mr-4">
               <div className="hidden md:inline-block">
                 <WorksImage design="fill-humano-light" size={64} />
               </div>
@@ -55,7 +55,7 @@ const Menu = () => {
         </TLink>
         <TLink href="/connect">
           <div className="bg-humano-yellow text-humano-dark transition-all ease-in-out duration-300 font-extrabold tracking-tighter rounded-lg p-2 md:p-4 uppercase z-0 relative top-0 left-0 group-hover:left-3 group-hover:-top-3 w-full">
-            <div className="float-left mr-4">
+            <div className="lg:float-left mr-4">
               <div className="hidden md:inline-block">
                 <ContactImage design="fill-humano-dark" size={64} />
               </div>
