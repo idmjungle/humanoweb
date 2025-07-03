@@ -7,8 +7,8 @@ interface GenerateMetadataParams {
   };
 }
 
-export async function generateMetadata({ params }: Promise<GenerateMetadataParams>) {
-  const { locale } = await params;
+export async function generateMetadata({ params }: GenerateMetadataParams) {
+  const { locale } = params;
   return generateLocalizedMetadata(locale, 'ContactPage', '/connect');
 }
 
