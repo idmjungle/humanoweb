@@ -21,13 +21,13 @@ export async function generateLocalizedMetadata(
       description,
       url,
       type: 'website',
-      images: ['https://humanoweb.com/og-image.jpg']
+      images: ['https://humanoweb.com/og.png']
     },
     twitter: {
       card: 'summary_large_image',
       title,
       description,
-      images: ['https://humanoweb.com/og-image.jpg']
+      images: ['https://humanoweb.com/og.png']
     },
     alternates: {
       canonical: url,
