@@ -1,7 +1,7 @@
 {
-  "Layout": {
-    "title": "Aplicación de Ejemplo",
-    "description": "Esta es una aplicación de ejemplo para demostrar la internacionalización."
+  "meta": {
+    "title": "Humano Web | Bilingual & Accessible Web Design",
+    "description": "Web design and development services that are bilingual, accessible, and human-centered."
   },
   "Menu": {
     "info": "Info",
@@ -33,6 +33,7 @@
         "Whether you're a small business needing a website or a creative needing a portfolio, I bring tech skills and a creative eye to the table. Not into tech talk? No worries. I keep it human, clear, and honest. Let’s make your idea real—and make it look good while we’re at it."
       ]
     },
+    "keywords": "who, about, team, mission",
     "what": {
       "title": "What I Do?",
       "description": "We’re here to make the web work for you. Whether you're building something new or need a fresh start, we’ve got your back with services that are practical, clean, and built to fit your goals:",
@@ -50,6 +51,7 @@
   "WorksPage": {
     "title": "Works",
     "description": "Click the image to see more about the project.",
+    "keywords" : "web design, bilingual, accessible, custom websites, portfolio, web development",
     "WorksGallery": {
       "works": [
         {
@@ -65,6 +67,7 @@
   "ContactPage": {
     "title": "Connect",
     "description": "Please fill out the form below to get in touch with us. We usually respond within 24 hours.",
+    "keywords": "contact, form, message, customer service",
     "name": "Name of Person or Business",
     "namePlace": "Enter Name or Business",
     "email": "Your Email ",

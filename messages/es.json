@@ -1,7 +1,7 @@
 {
-  "Layout": {
-    "title": "Aplicación de Ejemplo",
-    "description": "Esta es una aplicación de ejemplo para demostrar la internacionalización."
+  "meta": {
+    "title": "Humano Web | Diseño Web Bilingüe y Accesible",
+    "description": "Servicios de diseño y desarrollo web que son bilingües, accesibles y centrados en el ser humano."
   },
   "Menu": {
     "info": "Info",
@@ -36,6 +36,7 @@
     "what": {
       "title": "¿Qué Hacemos?",
       "description": "Nos gusta hacer que el internet funcione para ti. Si estás empezando o quieres mejorar lo que ya tienes, aquí estamos para ayudarte con servicios útiles, claros y hechos a tu medida:",
+      "keywords": "qué, hacemos, servicios, soluciones",
       "services": [
         "Sitios web personalizados que se ven geniales en teléfonos y computadoras de escritorio",
         "Páginas bilingües (inglés + español)",
@@ -50,6 +51,7 @@
   "WorksPage": {
     "title": "Trabajos",
     "description": "Haga clic en la imagen para ver más sobre el proyecto.",
+    "keywords": "diseño web, bilingüe, accesible, sitios web personalizados, portafolio, desarrollo web",
     "WorksGallery": {
       "works": [
         {
@@ -65,6 +67,7 @@
   "ContactPage": {
     "title": "Conectar",
     "description": "Por favor, completa el formulario a continuación para ponerte en contacto con nosotros. Por lo general, respondemos dentro de 24 horas.",
+    "keywords": "contacto, formulario, mensaje, servicio al cliente",
     "name": "Tu nombre o tu negocio",
     "namePlace": "Ingresa tu nombre o el nombre de tu negocio",
     "email": "Tu correo electrónico",

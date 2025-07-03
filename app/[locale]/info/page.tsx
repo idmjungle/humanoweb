@@ -5,6 +5,7 @@ import Image from "next/image";
 export const metadata = {
   title: "Info",
 };
+
 const AboutPage = () => {
   const t = useTranslations("AboutPage");
 
