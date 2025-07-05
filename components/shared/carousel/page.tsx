@@ -27,7 +27,7 @@ const Carousel = () => {
 
   return (
     <>
-      <div className="grid grid-cols-1 w-full gap-0 h-3/1 ">
+      <div className="grid grid-cols-1 w-full gap-0 h-3/1 overflow-hidden relative">
         <div className="animate-scrolling h-full">
           <div className="bg-fixed relative bg-no-repeat bg-cover bg-center bg-[url('/images/alyssa-strohmann-TS--uNw-JqE-unsplash.jpg')] h-1/3 bg-blend-luminosity">
             <div className="p-4 m-4 absolute bottom-0 right-0 text-humano-light bg-humano-dark/70 rounded-lg text-sm md:text-md">
@@ -80,11 +80,10 @@ const Carousel = () => {
         </div>
       </div>
       <div
-        className="flex absolute top-0 bottom-0 left-0 right-0 p-4 text-right text-humano-light bg-humano-dark/50 
-        rounded-t-lg h-full"
+        className="flex absolute top-0 bottom-0 left-0 right-0 p-4 text-right text-humano-light bg-humano-dark/50 rounded-t-lg overflow-hidden h-full"
         onClick={toggleCounting}
       >
-        <div className="flex text-5xl md:text-9xl font-extrabold tracking-tighter w-full h-full">
+        <div className="flex text-5xl overflow-hidden md:text-9xl font-extrabold tracking-tighter w-full h-full">
           <span
             className={`absolute self-center right-4 opacity-0 ${
               count > 6 && count <= 30
