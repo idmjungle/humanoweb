@@ -25,6 +25,7 @@
   "AboutPage": {
     "title": "Info",
     "description": "Conoce más sobre nuestra misión y equipo.",
+    "keywords": "quién, sobre, equipo, misión",
     "who": {
       "title": "¿Quiénes Somos?",
       "description": [

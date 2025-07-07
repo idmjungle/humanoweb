@@ -1,10 +1,16 @@
 import { useTranslations } from "next-intl";
 import PageTop from "@/components/shared/pageTop";
 import Image from "next/image";
+import { generateLocalizedMetadata } from '@/lib/metadata';
 
-export const metadata = {
-  title: "Info",
-};
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  return generateLocalizedMetadata(locale, "AboutPage", "/info");
+}
 
 const AboutPage = () => {
   const t = useTranslations("AboutPage");
