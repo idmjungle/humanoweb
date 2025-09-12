@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Humano Web | Diseño Web Bilingüe y Accesible",
-    "description": "Servicios de diseño y desarrollo web que son bilingües, accesibles y centrados en el ser humano."
+    "description": "Tu socio bilingüe para diseño web, desarrollo y mantenimiento. Humano Web da vida a tu visión en inglés y español con sitios web modernos y adaptables."
   },
   "Menu": {
     "info": "Info",
@@ -47,6 +47,51 @@
         "CMS personalizado fácil de gestionar para que tengas el control"
       ],
       "footer": "No nos complicamos con cosas innecesarias, solo soluciones sólidas y inteligentes para ayudarte a destacar en línea."
+    },
+    "faq": {
+      "title": "¿Tienes Preguntas?",
+      "questions": [
+        {
+          "question": "¿Necesito saber cómo programar?",
+          "answer": "Para nada. Nuestros sitios web vienen con un CMS fácil de usar, así que puedes actualizar tu contenido cuando quieras, sin necesidad de conocimientos técnicos."
+        },
+        {
+          "question": "¿Puedes ayudarme a traducir mi sitio?",
+          "answer": "¡Sí! Nos especializamos en sitios web bilingües y podemos ofrecer asistencia de traducción o estructurar tu contenido para audiencias en inglés y español."
+        },
+        {
+          "question": "¿Qué pasa si ya tengo un sitio web?",
+          "answer": "Podemos rediseñarlo, mejorar su rendimiento o migrar tu contenido actual a una plataforma más limpia y moderna, manteniendo lo que funciona y arreglando lo que no."
+        },
+        {
+          "question": "¿Cuánto tiempo se tarda en construir un sitio web?",
+          "answer": "Depende de la complejidad del proyecto, pero la mayoría de los sitios web personalizados tardan entre 4 y 6 semanas desde el inicio hasta la finalización."
+        },
+        {
+          "question": "¿Ofrecen soporte continuo?",
+          "answer": "¡Sí! Proporcionamos paquetes de mantenimiento que incluyen actualizaciones, verificaciones de seguridad y copias de seguridad para mantener tu sitio funcionando sin problemas."
+        },
+        {
+          "question": "¿Puedes ayudar con SEO?",
+          "answer": "¡Absolutamente! Construimos sitios con las mejores prácticas de SEO en mente y también podemos proporcionar servicios de SEO continuos para ayudar a mejorar tu visibilidad en línea."
+        },
+        {
+          "question": "¿Qué pasa si necesito ayuda después de que mi sitio esté en línea?",
+          "answer": "Ofrecemos soporte continuo y paquetes de mantenimiento para garantizar que tu sitio se mantenga actualizado, seguro y funcionando sin problemas."
+        },
+        {
+          "question": "¿Cuánto tiempo se tarda en construir un sitio web?",
+          "answer": "Depende de la complejidad del proyecto, pero la mayoría de los sitios web personalizados tardan entre 4 y 6 semanas desde el inicio hasta la finalización."
+        },
+        {
+          "question": "¿Ofrecen soporte continuo?",
+          "answer": "¡Sí! Proporcionamos paquetes de mantenimiento que incluyen actualizaciones, verificaciones de seguridad y copias de seguridad para mantener tu sitio funcionando sin problemas."
+        },
+        {
+          "question": "¿Puedes ayudar con SEO?",
+          "answer": "¡Absolutamente! Construimos sitios con las mejores prácticas de SEO en mente y también podemos proporcionar servicios de SEO continuos para ayudar a mejorar tu visibilidad en línea."
+        }
+      ]
     }
   },
   "WorksPage": {
@@ -81,6 +126,11 @@
     "sending": "Enviando...",
     "success": "¡Gracias!",
     "error": "Hubo un error al enviar tu mensaje. Por favor, inténtalo de nuevo más tarde."
+  },
+  "NotFound": {
+    "title": "404 - Página No Encontrada",
+    "description": "Lo sentimos, la página que buscas no existe.",
+    "home": "Volver al Inicio"
   },
   "title": ""
 }

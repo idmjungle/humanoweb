@@ -1,5 +1,5 @@
-import WorksClient from './client';
 import { generateLocalizedMetadata } from '@/lib/metadata';
+import WorksClient from './client';
 
 export async function generateMetadata({
   params,
@@ -11,5 +11,9 @@ export async function generateMetadata({
 }
 
 export default function WorksPage() {
-  return <WorksClient />;
+  return (
+    <>
+      <WorksClient />
+    </>
+  );
 }

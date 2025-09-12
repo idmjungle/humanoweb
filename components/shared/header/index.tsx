@@ -1,13 +1,13 @@
 "use client";
+
 import Image from "next/image";
 import Logo from "@/public/images/logo.svg";
-
 import {
-  FaTwitter,
+  FaBluesky,
   FaFacebook,
   FaPinterest,
   FaInstagram,
-} from "react-icons/fa";
+} from "react-icons/fa6";
 import { Link, usePathname, useRouter } from "@/i18n/navigation";
 import { useParams } from "next/navigation";
 
@@ -26,32 +26,55 @@ const Header = () => {
           <Image src={Logo} alt="group-10" width={680} height={175} />
         </Link>
         <div className="lg:mt-4 mt-2">
-          <button
-            className="bg-humano-light inline-flex h-8 w-8 md:h-12 md:w-12 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
-            type="button"
+          <a
+            href="https://bsky.app/profile/humano-web.bsky.social"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            <FaTwitter className="md:h-8 md:w-8 h-6 w-6" />
-          </button>
-          <button
-            className="bg-humano-light inline-flex h-8 w-8 md:h-12 md:w-12 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
-            type="button"
+            <button
+              className="bg-humano-light inline-flex h-8 w-8 md:h-12 md:w-12 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 hover:cursor-pointer"
+              type="button"
+            >
+              <FaBluesky className="md:h-8 md:w-8 h-6 w-6" />
+            </button>
+          </a>
+          <a
+            href="https://www.facebook.com/people/Humano-Web/61577124087699/"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            <FaFacebook className="md:h-8 md:w-8 h-6 w-6" />
-          </button>
-          <button
-            className="bg-humano-light inline-flex h-8 w-8 md:h-12 md:w-12 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
-            type="button"
+            <button
+              className="bg-humano-light inline-flex h-8 w-8 md:h-12 md:w-12 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 hover:cursor-pointer"
+              type="button"
+            >
+              <FaFacebook className="md:h-8 md:w-8 h-6 w-6" />
+            </button>
+          </a>
+          <a
+            href="https://www.pinterest.com/humanoweb/"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            <FaPinterest className="md:h-8 md:w-8 h-6 w-6" />
-          </button>
-          <button
-            className="bg-humano-light inline-flex h-8 w-8 md:h-12 md:w-12 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
-            type="button"
+            <button
+              className="bg-humano-light inline-flex h-8 w-8 md:h-12 md:w-12 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 hover:cursor-pointer"
+              type="button"
+            >
+              <FaPinterest className="md:h-8 md:w-8 h-6 w-6" />
+            </button>
+          </a>
+          <a
+            href="https://www.instagram.com/humano.web.design/"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            <FaInstagram className="md:h-8 md:w-8 h-6 w-6" />
-          </button>
+            <button
+              className="bg-humano-light inline-flex h-8 w-8 md:h-12 md:w-12 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 hover:cursor-pointer"
+              type="button"
+            >
+              <FaInstagram className="md:h-8 md:w-8 h-6 w-6" />
+            </button>
+          </a>
         </div>
-
       </div>
       <div className="flex items-center">
         {" "}
@@ -78,7 +101,9 @@ const Header = () => {
             <div className="absolute transition-all rounded-full w-8 h-8 md:w-12 md:h-12 bg-humano-dark top-0 left-0 peer-checked:translate-x-[100%] outline-1 -outline-offset-1"></div>
           </label>
         </div>
-        <span className="text-2xl md:text-4xl font-extrabold mb-2">&Eacute;S</span>{" "}
+        <span className="text-2xl md:text-4xl font-extrabold mb-2">
+          &Eacute;S
+        </span>{" "}
       </div>
     </header>
   );

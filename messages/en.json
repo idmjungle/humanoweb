@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Humano Web | Bilingual & Accessible Web Design",
-    "description": "Web design and development services that are bilingual, accessible, and human-centered."
+    "description": "Your bilingual partner for web design, development, and maintenance. Humano Web brings your vision to life in English and Spanish with modern, responsive websites."
   },
   "Menu": {
     "info": "Info",
@@ -38,14 +38,59 @@
       "title": "What I Do?",
       "description": "We’re here to make the web work for you. Whether you're building something new or need a fresh start, we’ve got your back with services that are practical, clean, and built to fit your goals:",
       "services": [
-        "Custom websites that look great on phones and desktops",
-        "Bilingual pages (English + Spanish)",
-        "Online stores and booking systems",
-        "Branding, logos, and visuals that feel like you",
-        "Help with updates, hosting, and maintenance",
-        "Easy-to-manage custom CMS so you’re in control"
+        "Custom websites that not only look great on phones and desktops, but are also built for fast loading, strong SEO performance, and a smooth user experience.",
+        "Bilingual pages (English + Spanish) tailored to your audience, with accurate translations and intuitive layouts that make navigation easy in both languages.",
+        "Online stores and booking systems that are secure, streamlined, and user-friendly—perfect for selling products, offering services, or managing appointments and events in real time.",
+        "Branding, logos, and visual elements crafted to match your identity, helping you stand out with a look and feel that truly represents your business or project.",
+        "Ongoing support with updates, hosting, and maintenance, so your site stays up to date, secure, and running smoothly—without you having to worry about the technical stuff.",
+        "A custom, easy-to-manage CMS that puts you in control of your content—no extra steps, no clutter, just a simple and flexible editing experience."
       ],
       "footer": "We don’t overcomplicate things—just solid, smart solutions to help you show up online."
+    },
+    "faq": {
+      "title": "Have Questions?",
+      "questions": [
+        {
+          "question": "Do I need to know how to code?",
+          "answer": "Not at all. Our websites come with a user-friendly CMS, so you can update your content whenever you want—no technical knowledge required."
+        },
+        {
+          "question": "Can you help me translate my site?",
+          "answer": "Yes! We specialize in bilingual websites and can provide translation assistance or structure your content for both English and Spanish audiences."
+        },
+        {
+          "question": "What if I already have a website?",
+          "answer": "We can redesign, improve performance, or migrate your current content to a cleaner and more modern platform, keeping what works and fixing what doesn’t."
+        },
+        {
+          "question": "How long does it take to build a website?",
+          "answer": "It depends on the complexity of the project, but most custom websites take about 4-6 weeks from start to finish."
+        },
+        {
+          "question": "Do you offer ongoing support?",
+          "answer": "Yes! We provide maintenance packages that include updates, security checks, and backups to keep your site running smoothly."
+        },
+        {
+          "question": "Can you help with SEO?",
+          "answer": "Absolutely! We build sites with SEO best practices in mind and can also provide ongoing SEO services to help improve your visibility online."
+        },
+        {
+          "question": "What if I need help after my site is live?",
+          "answer": "We offer ongoing support and maintenance packages to ensure your site stays updated, secure, and running smoothly."
+        },
+        {
+          "question": "How long does it take to build a website?",
+          "answer": "It depends on the complexity of the project, but most custom websites take about 4-6 weeks from start to finish."
+        },
+        {
+          "question": "Do you offer ongoing support?",
+          "answer": "Yes! We provide maintenance packages that include updates, security checks, and backups to keep your site running smoothly."
+        },
+        {
+          "question": "Can you help with SEO?",
+          "answer": "Absolutely! We build sites with SEO best practices in mind and can also provide ongoing SEO services to help improve your visibility online."
+        }
+      ]
     }
   },
   "WorksPage": {
@@ -80,6 +125,11 @@
     "sending": "Sending...",
     "success": "Thank you!",
     "error": "There was an error sending your message. Please try again later."
+  },
+  "NotFound": {
+    "title": "404 - Page Not Found",
+    "description": "Sorry, the page you are looking for does not exist.",
+    "home": "Go back to Home"
   },
   "title": "Info"
 }
