@@ -1,11 +1,12 @@
 "use client";
 import { Link, usePathname } from "@/i18n/navigation";
 import React from "react";
+import type { Route } from 'next';
 import { useRef, useEffect } from "react";
 import { useRouter } from "@/i18n/navigation";
 import { LinkProps } from "next/link";
 
-type AllowedHref = "/" | "/info" | "/works" | "/connect";
+type AllowedHref = "/" | "/info" | "/works" | "/connect" & Route;
 
 interface TLinkProps extends LinkProps {
   children: React.ReactNode;
