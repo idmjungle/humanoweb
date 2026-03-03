@@ -8,9 +8,10 @@ import { LinkProps } from "next/link";
 
 type AllowedHref = "/" | "/info" | "/works" | "/connect" & Route;
 
-interface TLinkProps extends LinkProps {
+interface TLinkProps extends Omit<LinkProps, 'prefetch'> {
   children: React.ReactNode;
   href: string;
+  prefetch?: boolean | 'auto' | null;
 }
 
 function sleep(ms: number): Promise<void> {
