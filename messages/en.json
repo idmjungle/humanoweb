@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Humano Web | Bilingual & Accessible Web Design",
-    "description": "Your bilingual partner for web design, development, and maintenance. Humano Web brings your vision to life in English and Spanish with modern, responsive websites."
+    "description": "Humano Web Services delivers bilingual web design, redesign, and maintenance for small businesses in Tacoma, Olympia, and Thurston County. Custom English and Spanish websites built to convert local customers."
   },
   "Menu": {
     "info": "Info",
@@ -13,13 +13,54 @@
     "maintanance": "Site Maintenance",
     "redesign": "Website Redesign",
     "lang": "In English and Spanish"
+
   },
   "HomePage": {
-    "title": "Home",
-    "description": "Explore our features and services.",
-    "sampleText": [
-      "Lorem ipsum dolor sit amet. Qui voluptatem temporibus nam harum autem sit aliquam autem qui expedita amet eos ipsam amet. Eum odio galisum At facilis numquam in iusto aperiam qui galisum maxime ex tempora autem eum mollitia ratione. Sit minus quos aut rerum labore est sequi quos eos cumque maxime vel rerum consequatur a pariatur neque. Ex accusamus sapiente ut vitae animi ex voluptatem quod ad facilis odit ea incidunt consequatur aut perferendis molestias. ",
-      "Ad modi molestiae et sequi sunt sed quas quia ab molestiae expedita et atque obcaecati aut quod obcaecati qui doloribus neque. Eos animi numquam quo nihil distinctio est fugit perferendis vel numquam voluptatum qui omnis voluptatem. Eos provident nisi qui omnis mollitia et nisi quod non fugiat quia aut assumenda iste ut sequi reprehenderit. Nam quam eaque ut enim sint aut distinctio possimus aut voluptas voluptatem eos internos repellat ut libero sunt quo aliquid sint. Ut perferendis velit non voluptatibus molestiae ut quam tempore ut placeat eaque in consectetur illum. Qui ratione delectus nam quisquam esse aut aperiam itaque."
+    "title": "Humano Web | Bilingual & Accessible Web Design",
+    "description": "Humano Web Services delivers bilingual web design, redesign, and maintenance for small businesses in Olympia Thurston County, and surrounding areas. Custom English and Spanish websites built to convert local customers.",
+    "keywords": "bilingual web design, Olympia web design, Tacoma web design, Thurston County web design, Kitsap County web design, website maintenance, website redesign",
+    "introHeading": "Web Design Services in Olympia Thurston County, and surrounding areas",
+    "introSubtitle": "Bilingual websites built for small businesses and local organizations.",
+    "introParagraph": "Humano Web Services creates custom websites, redesigns, and ongoing maintenance for Olympia, Thurston County, and surrounding areas' businesses. We deliver English and Spanish websites that are easy to manage, fast, and designed to help your local brand grow online.",
+    "introDetails": [
+      "We focus on practical websites that help local businesses get calls, quote requests, bookings, and qualified leads instead of just page views.",
+      "Every project includes clean information architecture, mobile-first layouts, technical SEO basics, and content blocks built for real customer questions.",
+      "Our bilingual workflow ensures both English and Spanish pages feel native, clear, and trustworthy so your business can connect with more people in your service area."
+    ],
+    "servicesHeading": "What we do",
+    "services": [
+      "Custom website design for local businesses",
+      "Website redesigns with fresh branding",
+      "Ongoing site maintenance and updates",
+      "English and Spanish website content"
+    ],
+    "processHeading": "How our web process works",
+    "processSteps": [
+      "Discovery and strategy: we define your goals, ideal clients, service areas, and conversion targets before design starts.",
+      "Content and structure: we organize pages around what people search for locally, including service pages, trust signals, and clear calls to action.",
+      "Design and development: we build a fast, responsive website with accessible typography, optimized media, and stable technical foundations.",
+      "Launch and growth: we monitor performance, refine copy, and maintain updates so your website keeps improving over time."
+    ],
+    "localHeading": "Built for local search visibility in Washington",
+    "localSignals": [
+      "We create location-aware website copy for Olympia, Tacoma, Thurston County, and nearby communities to reinforce your local relevance.",
+      "Service pages are structured around real customer intent, including emergency services, appointment requests, and neighborhood-specific offerings.",
+      "Schema, metadata, and internal linking are configured to support stronger indexing and clearer topical authority for your business."
+    ],
+    "faqHeading": "Common questions before starting a new site",
+    "homeFaqs": [
+      {
+        "question": "How long does a custom website project usually take?",
+        "answer": "Most small business websites are completed in 4 to 8 weeks depending on content readiness, number of pages, and custom functionality."
+      },
+      {
+        "question": "Can you redesign my current website without losing SEO value?",
+        "answer": "Yes. We map existing URLs, preserve ranking signals where possible, and implement redirects to avoid traffic loss during relaunch."
+      },
+      {
+        "question": "Do you offer support after launch?",
+        "answer": "Absolutely. We provide maintenance, edits, and performance monitoring so your website stays secure, updated, and conversion-ready."
+      }
     ]
   },
   "AboutPage": {

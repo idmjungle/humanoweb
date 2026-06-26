@@ -80,16 +80,16 @@ const AboutPage = () => {
           </div>
           {whoDescription}
         </div>
-        <h2 className="text-4xl md:text-6xl font-bold my-8 text-shadow-red">
+        <h3 className="text-4xl md:text-6xl font-bold my-8 text-shadow-red">
           {t("what.title")}
-        </h2>
+        </h3>
         <p className="text-xl md:text-2xl mb-4">{t("what.description")}</p>
         <ul className="text-xl md:text-2xl list-disc list-inside list-image-[url('/images/humano_logo_bullet.png')]">
           {whatServices}
         </ul>
-        <h2 className="text-4xl md:text-6xl font-bold my-8 text-shadow-red">
+        <h4 className="text-4xl md:text-6xl font-bold my-8 text-shadow-red">
           {t("faq.title")}
-        </h2>
+        </h4>
         <ul className="text-xl md:text-2xl list-decimal list-inside">
           {whatFAQ}
         </ul>

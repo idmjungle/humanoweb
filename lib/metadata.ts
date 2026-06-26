@@ -10,7 +10,7 @@ export async function generateLocalizedMetadata(
   const title = t(`${key}.title`);
   const description = t(`${key}.description`);
   const keywords = t(`${key}.keywords`);
-  const url = `https://humanoweb.com/${locale}${path}`;
+  const url = `https://www.humanoweb.com/${locale}${path}`;
 
   return {
     title,
@@ -21,19 +21,19 @@ export async function generateLocalizedMetadata(
       description,
       url,
       type: 'website',
-      images: ['https://humanoweb.com/og.png']
+      images: ['https://www.humanoweb.com/images/humano_lines.png']
     },
     twitter: {
       card: 'summary_large_image',
       title,
       description,
-      images: ['https://humanoweb.com/og.png']
+      images: ['https://www.humanoweb.com/images/humano_lines.png']
     },
     alternates: {
       canonical: url,
       languages: {
-        en: `https://humanoweb.com/en${path}`,
-        es: `https://humanoweb.com/es${path}`
+        en: `https://www.humanoweb.com/en${path}`,
+        es: `https://www.humanoweb.com/es${path}`
       }
     }
   };

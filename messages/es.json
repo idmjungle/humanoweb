@@ -15,11 +15,51 @@
     "lang": "En Inglés y Español"
   },
   "HomePage": {
-    "title": "Hogar",
-    "description": "Explora nuestras características y servicios.",
-    "sampleText": [
-      "Este es un texto de muestra para demostrar el diseño y la disposición de la aplicación.",
-      "Este es otro texto de muestra para mostrar las capacidades multilingües de la aplicación."
+    "title": "Humano Web | Diseño Web Bilingüe y Accesible",
+    "description": "Humano Web Services ofrece diseño y desarrollo web bilingüe para pequeñas empresas en Olympia, el condado de Thurston y áreas circundantes. Sitios personalizados, rediseños y mantenimiento — en inglés y español.",
+    "keywords": "diseño web bilingüe, diseño web Olympia, Tacoma, desarrollo web Thurston, mantenimiento de sitios, rediseño de sitios",
+    "introHeading": "Servicios de Diseño Web en Olympia, Tacoma y el Condado de Thurston",
+    "introSubtitle": "Sitios bilingües creados para empresas locales y organizaciones.",
+    "introParagraph": "Humano Web Services crea sitios web personalizados, rediseños y mantenimiento continuo para empresas en Olympia, Tacoma y el condado de Thurston. Entregamos sitios en inglés y español que son fáciles de administrar, rápidos y diseñados para ayudar a tu marca local a crecer en línea.",
+    "introDetails": [
+      "Nos enfocamos en sitios web funcionales que ayudan a negocios locales a recibir llamadas, solicitudes de cotizacion, reservas y clientes potenciales de calidad.",
+      "Cada proyecto incluye arquitectura de contenido clara, diseno mobile-first, bases de SEO tecnico y bloques de texto pensados para preguntas reales de tus clientes.",
+      "Nuestro proceso bilingue garantiza que las versiones en ingles y espanol se sientan naturales, claras y confiables para conectar con mas personas en tu area de servicio."
+    ],
+    "servicesHeading": "Qué hacemos",
+    "services": [
+      "Diseño web personalizado para negocios locales",
+      "Rediseños de sitios con branding renovado",
+      "Mantenimiento y actualizaciones continuas",
+      "Contenido web en inglés y español"
+    ],
+    "processHeading": "Como funciona nuestro proceso web",
+    "processSteps": [
+      "Descubrimiento y estrategia: definimos objetivos, clientes ideales, zonas de servicio y metas de conversion antes de iniciar el diseno.",
+      "Contenido y estructura: organizamos tus paginas segun lo que la gente busca localmente, con secciones de servicio, prueba social y llamados a la accion claros.",
+      "Diseno y desarrollo: construimos un sitio rapido, responsive y accesible con medios optimizados y una base tecnica estable.",
+      "Lanzamiento y crecimiento: monitoreamos resultados, ajustamos el contenido y mantenemos actualizaciones para mejorar el sitio de forma continua."
+    ],
+    "localHeading": "Creado para mejorar tu visibilidad local en Washington",
+    "localSignals": [
+      "Creamos contenido enfocado en Olympia, Tacoma, el condado de Thurston y comunidades cercanas para fortalecer tu relevancia local.",
+      "Las paginas de servicio se estructuran segun intencion real de clientes, incluyendo solicitudes urgentes, citas y necesidades por zona.",
+      "Configuramos schema, metadatos y enlaces internos para mejorar la indexacion y reforzar la autoridad tematica de tu negocio."
+    ],
+    "faqHeading": "Preguntas comunes antes de crear un nuevo sitio",
+    "homeFaqs": [
+      {
+        "question": "Cuanto tarda normalmente un proyecto de sitio web personalizado?",
+        "answer": "La mayoria de los sitios para pequenas empresas se completan entre 4 y 8 semanas, segun el contenido disponible y la complejidad del proyecto."
+      },
+      {
+        "question": "Pueden redisenar mi sitio actual sin perder valor SEO?",
+        "answer": "Si. Mapeamos URLs existentes, conservamos senales de posicionamiento y aplicamos redirecciones para evitar perdida de trafico."
+      },
+      {
+        "question": "Ofrecen soporte despues del lanzamiento?",
+        "answer": "Claro. Incluimos mantenimiento, ediciones y monitoreo de rendimiento para que tu sitio siga seguro, actualizado y listo para convertir."
+      }
     ]
   },
   "AboutPage": {
