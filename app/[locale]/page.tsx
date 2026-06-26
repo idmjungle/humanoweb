@@ -13,8 +13,8 @@ export async function generateMetadata({
   return generateLocalizedMetadata(locale, "HomePage", "");
 }
 
-const Homepage = async ({ params }: { params: { locale: string } }) => {
-  const { locale } = params;
+const Homepage = async ({ params }: { params: Promise<{ locale: string }> }) => {
+  const { locale } = await params;
   const t = await getTranslations({ locale });
   const rawServices = t.raw ? t.raw("HomePage.services") : undefined;
   const rawIntroDetails = t.raw ? t.raw("HomePage.introDetails") : undefined;
@@ -91,7 +91,7 @@ const Homepage = async ({ params }: { params: { locale: string } }) => {
           <Carousel />
         </div>
       </div>
-      <section className="p-6 max-w-6xl mx-auto space-y-10 h-card">
+      <section className="p-6 max-w-6xl mx-auto space-y-10 h-card hidden">
         <div className="sr-only">
           <span className="p-name">{APP_NAME}</span>
           <a className="u-url" href={`${SERVER_URL}/${locale}`}>

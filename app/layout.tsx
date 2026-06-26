@@ -1,4 +1,3 @@
-import "@/assets/styles/globals.css";
 import { Funnel_Display } from "next/font/google";
 import Script from "next/script";
 import { GA_MEASUREMENT_ID } from "@/lib/constants";
