@@ -34,3 +34,12 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+## Contact form CAPTCHA
+
+The contact form uses [Cloudflare Turnstile](https://www.cloudflare.com/products/turnstile/) to prevent automated submissions. Create a Turnstile widget for your website and configure these environment variables in your local environment and deployment:
+
+- `NEXT_PUBLIC_TURNSTILE_SITE_KEY` — the widget's site key.
+- `TURNSTILE_SECRET_KEY` — the widget's secret key. Keep this server-side and do not prefix it with `NEXT_PUBLIC_`.
+
+Contact submissions are rejected unless Turnstile verifies the token.

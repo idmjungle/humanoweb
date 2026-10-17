@@ -1,10 +1,92 @@
 "use client";
 import PageTop from "@/components/shared/pageTop";
+import Script from "next/script";
 import { useTranslations } from "next-intl";
-import { FormEvent, FormEventHandler, useState } from "react";
+import {
+  FormEvent,
+  FormEventHandler,
+  useCallback,
+  useEffect,
+  useRef,
+  useState,
+} from "react";
 import { useParams } from "next/navigation";
 import z from "zod";
 import { PatternFormat } from "react-number-format";
+
+type TurnstileApi = {
+  render: (
+    container: HTMLElement,
+    options: {
+      sitekey: string;
+      callback: (token: string) => void;
+      "expired-callback": () => void;
+      "error-callback": () => void;
+    }
+  ) => string;
+  reset: (widgetId: string) => void;
+  remove: (widgetId: string) => void;
+};
+
+declare global {
+  interface Window {
+    turnstile?: TurnstileApi;
+  }
+}
+
+const TurnstileCaptcha = ({
+  siteKey,
+  onToken,
+  resetSignal,
+  loadingError,
+  unavailable,
+}: {
+  siteKey: string;
+  onToken: (token: string) => void;
+  resetSignal: number;
+  loadingError: string;
+  unavailable: string;
+}) => {
+  const containerRef = useRef<HTMLDivElement>(null);
+  const widgetIdRef = useRef<string | null>(null);
+  const [scriptReady, setScriptReady] = useState(false);
+  const [scriptFailed, setScriptFailed] = useState(false);
+
+  useEffect(() => {
+    if (!scriptReady || !window.turnstile || !containerRef.current) return;
+
+    widgetIdRef.current = window.turnstile.render(containerRef.current, {
+      sitekey: siteKey,
+      callback: onToken,
+      "expired-callback": () => onToken(""),
+      "error-callback": () => onToken(""),
+    });
+
+    return () => {
+      if (widgetIdRef.current && window.turnstile) {
+        window.turnstile.remove(widgetIdRef.current);
+      }
+      widgetIdRef.current = null;
+    };
+  }, [onToken, resetSignal, scriptReady, siteKey]);
+
+  if (!siteKey) {
+    return <p className="text-humano-red text-lg">{unavailable}</p>;
+  }
+
+  return (
+    <>
+      <Script
+        src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit"
+        strategy="afterInteractive"
+        onLoad={() => setScriptReady(true)}
+        onError={() => setScriptFailed(true)}
+      />
+      <div ref={containerRef} />
+      {scriptFailed && <p className="text-humano-red text-lg">{loadingError}</p>}
+    </>
+  );
+};
 
 const ContactPage = () => {
   const t = useTranslations("ContactPage");
@@ -12,8 +94,16 @@ const ContactPage = () => {
   const locale = params.locale;
   const [sending, setSending] = useState<boolean>(false);
   const [error, setError] = useState<boolean>(false);
+  const [submitError, setSubmitError] = useState<boolean>(false);
   const [success, setSuccess] = useState<boolean>(false);
   const [message, setMessage] = useState<z.ZodIssue[]>([]);
+  const [captchaToken, setCaptchaToken] = useState("");
+  const [captchaResetSignal, setCaptchaResetSignal] = useState(0);
+  const handleCaptchaToken = useCallback(
+    (token: string) => setCaptchaToken(token),
+    []
+  );
+  const turnstileSiteKey = process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY || "";
   const Task = z.object({
     name: z.string().min(1, "Name is required"),
     email: z.string().email("Invalid email address"),
@@ -26,6 +116,7 @@ const ContactPage = () => {
   ) => {
     event.preventDefault();
     setError(false);
+    setSubmitError(false);
     const form = new FormData(event.currentTarget);
     try {
       await Task.parseAsync({
@@ -34,6 +125,7 @@ const ContactPage = () => {
         tel: form.get("tel"),
         message: form.get("message"),
       });
+      form.set("captchaToken", captchaToken);
       setSending(true);
       const response = await fetch(`/${locale}/api/contact`, {
         method: "POST",
@@ -44,13 +136,12 @@ const ContactPage = () => {
         throw new Error(`response status: ${response.status}`);
       }
 
-      const data = await response.json();
-      console.log(data);
-      setSuccess(true);
+      await response.json();
       setSending(false);
+      setSuccess(true);
     } catch (err) {
       console.log(err);
-      // alert("Error, please try resubmitting the form");
+      setSending(false);
       if (err instanceof z.ZodError) {
         setError(true);
         setMessage(err.errors);
@@ -58,6 +149,9 @@ const ContactPage = () => {
           return `${error.path.join(".")}: ${error.message}`;
         });
       }
+      setSubmitError(true);
+      setCaptchaToken("");
+      setCaptchaResetSignal((value) => value + 1);
       return "Error, please try resubmitting the form";
     }
   };
@@ -171,15 +265,33 @@ const ContactPage = () => {
             (sending || success) && "hidden"
           } lg:col-span-2 xl:col-span-1`}
         >
-          <label className="text-humano-dark font-bold mb-2 block">
+                      <label className="text-humano-dark font-bold mb-2 block">
             &nbsp;
-          </label>
+            </label>
+
           <button
             type="submit"
-            className="text-humano-light bg-humano-dark rounded-4xl font-bold hover:bg-humano-orange hover:text-humano-dark text-5xl md:text-7xl text-left tracking-tighter leading-[0.8] px-4 py-2.5 md:w-full border-0 outline-0 cursor-pointer h-32 md:h-66 "
+            disabled={!captchaToken || sending || !turnstileSiteKey}
+            className="text-humano-light bg-humano-dark rounded-4xl font-bold hover:bg-humano-orange hover:text-humano-dark text-5xl md:text-7xl text-left tracking-tighter leading-[0.8] px-4 py-2.5 md:w-full border-0 outline-0 cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed h-32 md:h-66 "
           >
             {t("submit")}
           </button>
+                    <label className="text-humano-dark font-bold mb-2 block">
+            {t("captcha")}
+          </label>
+          <TurnstileCaptcha
+            siteKey={turnstileSiteKey}
+            onToken={handleCaptchaToken}
+            resetSignal={captchaResetSignal}
+            loadingError={t("captchaLoadingError")}
+            unavailable={t("captchaUnavailable")}
+          />
+          {submitError && (
+            <p role="alert" className="text-humano-red text-lg">
+              {t("error")}
+            </p>
+          )}
+
         </div>
       </form>
     </div>
